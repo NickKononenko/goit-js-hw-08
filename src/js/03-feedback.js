@@ -21,7 +21,7 @@ function onInput() {
 
 function onSubmit(event) {
   event.preventDefault();
-  console.log(savedUserData);
+  console.log(currentData || savedUserData);
   localStorage.removeItem('feedback-form-state');
   form.reset();
 }
